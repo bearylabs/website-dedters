@@ -1,12 +1,356 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Coiffeur Dedters">
-	<main>
-		
-		
-	</main>
-</Layout>
+<Layout title="">
+  <section
+    class="h-screen flex justify-center pt-28 pb-28 -mt-16 overflow-hidden text-white bg-dark md:pt-40"
+    id="hero"
+  >
+    <div class="flex flex-col justify-center items-center">
+      <div class="min-w-[1%] flex flex-col items-center text-center">
+        <h1 class="hidden">
+          Coiffeur Dedters: Dein Experte für trendige Hairstyles in Moers
+          Rheinkamper Ring
+        </h1>
+        <img
+          width="NaN"
+          height="NaN"
+          alt="company logo"
+          src="/images/coiffeur-dedters.svg"
+          class="min-w-[20em] max-w-[60vw] max-h-24 mt-6"
+        />
+        <p
+          class="mt-7 mb-10 font-serif tracking-wide leading-relaxed md:text-cl"
+        >
+          Weil gutes Aussehen Kopfsache ist!
+        </p>
+      </div>
+    </div>
+    <a href="/#feature" class="absolute bottom-10 block">
+      <img src="/images/icons/scissors.svg" class="w-7 animate-bounce" />
+    </a>
+  </section>
+  <section class="py-20" id="feature">
+    <div class="container">
+      <div>
+        <div class="px-4 md:w-8/12 mx-auto text-center">
+          <h2 class="mb-16 text-5xl leading-normal font-semibold">
+            Willkommen bei den innovativen Hairstylisten am Rheinkamper Ring in
+            Moers!
+          </h2>
+          <p class="text-lg font-semibold leading-normal">
+            Unser Team ist mehr als nur Friseure – wir sind deine Partner auf
+            dem Weg zu deinem perfekten Styling. In unserem Salon spürst du
+            unsere leidenschaftliche Hingabe zu unserem Handwerk.
+            <br />
+            <br />Egal, ob du nach einem neuen Haarschnitt, einer
+            Farbveränderung oder einer speziellen Styling-Idee suchst – bei uns
+            bist du in besten Händen.
+            <br />
+            <br />Komm vorbei und lass dich von unserem professionellen Service
+            überzeugen. Wir freuen uns darauf, dich in unserem Salon begrüßen zu
+            dürfen!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 px-4 bg-neutral-900" id="showcase">
+    <div class="container">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div class="relative overflow-hidden">
+          <img
+            class="object-cover w-full h-full rounded-xl"
+            src="/images/showcase/showcase1.jpg"
+            alt="Placeholder"
+          />
+        </div>
+        <div class="relative overflow-hidden">
+          <img
+            class="object-cover w-full h-full rounded-xl"
+            src="/images/showcase/showcase2.jpg"
+            alt="Placeholder"
+          />
+        </div>
+        <div class="relative overflow-hidden">
+          <img
+            class="object-cover w-full h-full rounded-xl"
+            src="/images/showcase/showcase3.jpg"
+            alt="Placeholder"
+          />
+        </div>
+        <div class="relative overflow-hidden">
+          <img
+            class="object-cover w-full h-full rounded-xl"
+            src="/images/showcase/showcase4.jpg"
+            alt="Placeholder"
+          />
+        </div>
+        <div class="relative overflow-hidden">
+          <img
+            class="object-cover w-full h-full rounded-xl"
+            src="/images/showcase/showcase5.jpg"
+            alt="Placeholder"
+          />
+        </div>
+        <div class="relative overflow-hidden">
+          <img
+            class="object-cover w-full h-full rounded-xl"
+            src="/images/showcase/showcase6.jpg"
+            alt="Placeholder"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20" id="prices">
+    <div class="container pb-28">
+      <div>
+        <div class="mx-auto text-center md:w-8/12">
+          <h2 class="mb-4 p-4 text-5xl leading-normal font-semibold">
+            Unsere Angebote
+          </h2>
+          <p class="mb-20 p-4 text-lg font-semibold leading-normal">
+            Bei Coiffeuer Dedters bist Du immer in professionellen Händen. Unser
+            Team beherrscht nicht nur das klassische Frisurenrepertoire, sondern
+            auch die jeweils top-aktuellen Stylings der Saison. Unser
+            Leistungsspektrum wird dabei ideal durch unser Angebot an TOP
+            Pflegeprodukten ergänzt.
+            <br />
+            <br />Gerne vereinbaren wir einen unverbindlichen Beratungstermin
+            mit Dir. Unser Fachpersonal steht Dir mit Rat und Tat zur Seite!
+          </p>
+        </div>
+      </div>
 
+      <div class="grid gap-6 xl:grid-cols-3 justify-center">
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img
+            class="w-7 h-7 mb-5"
+            src="/images/icons/female.svg"
+            alt="Female Icon"
+          />
+          <h5
+            class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+          >
+            Damen
+          </h5>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 mr-5 font-normal text-gray-500 dark:text-gray-400">
+              Waschen, schneiden, föhnen:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              ab 49,00 €
+            </p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Farbe inkl. Pflege:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              ab 50,50 €
+            </p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Waschen, föhnen:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              ab 24,50 €
+            </p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Dauerwelle inkl. Pflege:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              ab 63,50 €
+            </p>
+          </div>
+        </div>
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img
+            class="w-7 h-7 mb-5"
+            src="/images/icons/badge.svg"
+            alt="Badge Icon"
+          />
+          <h5
+            class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+          >
+            Kosmetik
+          </h5>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Augenbrauen zupfen:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              ab 5,00 €
+            </p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Augenbrauen färben:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              9,00 €
+            </p>
+          </div>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Wimpern färben:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              9,00 €
+            </p>
+          </div>
+        </div>
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <img
+            class="w-7 h-7 mb-5"
+            src="/images/icons/male.svg"
+            alt="Male Icon"
+          /><h5
+            class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+          >
+            Herren
+          </h5>
+          <div class="flex flex-row justify-between">
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              Waschen, schneiden, föhnen:
+            </p>
+            <p class="mb-2 font-normal text-gray-500 dark:text-gray-400">
+              ab 30,00 €
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 text-light bg-neutral-900" id="contact">
+    <div class="container">
+      <div>
+        <div class="flex flex-col items-center mx-auto mb-12 md:w-8/12">
+          <h2 class="mb-16 text-5xl leading-normal font-semibold">
+            Öffnungszeiten
+          </h2>
+          <p class="mb-5 text-xl font-semibold">Sonntags und Montags</p>
+          <p class="mb-5">geschlossen</p>
+          <p class="mb-5 text-xl font-semibold">
+            Dienstags, Mittwochs und Freitags
+          </p>
+          <p class="mb-5">9:00 - 18:30</p>
+          <p class="mb-5 text-xl font-semibold">
+            Donnerstags in geraden Wochen
+          </p>
+          <p class="mb-5">9:00 - 18:30</p>
+          <p class="mb-5 text-xl font-semibold">Samstags in ungeraden Wochen</p>
+          <p class="mb-5">8:00 - 14:00</p>
+          <h5 class="text-lg p-4 mt-12 leading-normal text-center">
+            Hast Du Fragen oder willst einen Termin vereinbaren? Schick uns eine
+            E-Mail oder Ruf uns während unserer Öffnungszeiten an. Wir freuen
+            uns auf Dich!
+          </h5>
+        </div>
+        <div class="lg:flex">
+          <div class="flex w-full lg:w-8/12 bg-white p-6">
+            <img src="/images/team.webp" alt="placeholder" />
+          </div>
+          <div class="flex w-full flex-col p-6 text-light bg-dark lg:w-4/12">
+            <h4 class="text-xl font-semibold mb-8">Kontakt</h4>
+            <div class="flex items-center mb-3">
+              <img
+                class="w-7 h-7"
+                src="/images/icons/location-dot.svg"
+                alt=""
+              />
+              <span class="pl-3">Kurt-Schuhmacher-Allee 6, 47445 Moers</span>
+            </div>
+            <div class="flex items-center mb-3">
+              <img class="w-7 h-7" src="/images/icons/mobile.svg" alt="" />
+              <a href="tel:02841 43970" class="block">
+                <span class="text-light pl-3">02841 43970</span>
+              </a>
+            </div>
+            <div class="flex items-center mb-3">
+              <img class="w-7 h-7" src="/images/icons/envelope.svg" alt="" />
+              <a href="mailto:coiffeur-dedters@t-online.de" class="block">
+                <span class="text-light pl-3">coiffeur-dedters@t-online.de</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-28" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col md:w-8/12 mx-auto text-center mb-12">
+          <h2 class="mb-4 p-4 text-5xl leading-normal font-semibold">
+            Das Coiffeur Dedters Team
+          </h2>
+          <p class="mb-20 p-4 text-lg font-semibold leading-normal">
+            Bei Coiffeuer Dedters bist Du immer in professionellen Händen. Unser
+            Team beherrscht nicht nur das klassische Frisurenrepertoire, sondern
+            auch die jeweils top-aktuellen Stylings der Saison. Unser
+            Leistungsspektrum wird dabei ideal durch unser Angebot an TOP
+            Pflegeprodukten ergänzt.
+            <br />
+            <br />Gerne vereinbaren wir einen unverbindlichen Beratungstermin
+            mit Dir. Unser Fachpersonal steht Dir mit Rat und Tat zur Seite!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-neutral-900">
+      <div class="flex flex-col lg:flex-row pt-16 lg:p-16">
+        <div class="p-6 text-light bg-dark lg:w-8/12">
+          <h4 class="mb-16 text-2xl leading-normal font-semibold">
+            Conny Dedters
+          </h4>
+          <p class="mb-20 text-base font-semibold leading-normal">
+            Seit über 30 Jahren führt Conny das Coiffeur Dedters. Als
+            leidenschaftliche Friseurin ist sie immer auf der Suche nach
+            Perfektion. Mit über 40 Jahren Erfahrung glaubt sie an die Schönheit
+            in jedem. Inzwischen hat sie mehr als 200.000 Köpfe frisiert und
+            plant, noch lange weiterzumachen. Die Zusammenarbeit mit ihrer
+            Tochter Justine Dedters sichert die Zukunft des Salons.
+          </p>
+        </div>
+        <div class="p-6 order-first bg-white lg:w-4/12 lg:order-last">
+          <img src="/images/conny.webp" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row pt-16 lg:p-16 lg:pt-0">
+        <div class="p-6 text-light bg-dark lg:w-8/12">
+          <h4 class="mb-16 text-2xl leading-normal font-semibold">
+            Justine Dedters
+          </h4>
+          <p class="mb-20 text-base font-semibold leading-normal">
+            Die erfolgreiche Friseurmeisterin, hat nach ihrer Ausbildung
+            vielfältige Erfahrungen in Steckfrisuren, Beauty Consulting und im
+            Bereich Hair & Make-up gesammelt. Nun teilt sie ihr Wissen und ihre
+            Leidenschaft deutschlandweit als Trainerin. Dabei bildet sie sich
+            kontinuierlich international weiter, um Kunden und Kollegen stets
+            mit neuen Ideen zu inspirieren. Seit 2013 arbeitet sie zudem als
+            Freelancerin für Londa Professional.
+          </p>
+        </div>
+        <div class="p-6 order-first bg-white lg:w-4/12">
+          <img
+            src="/images/justine.webp"
+            class="w-full h-full object-cover object-top"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
