@@ -1,5 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Main.astro";
+
+import CoiffeurDedters from "../assets/coiffeur-dedters.svg.astro";
+
+import Femalesvg from "../assets/icons/female.svg.astro";
+import Badgesvg from "../assets/icons/badge.svg.astro";
+import Malesvg from "../assets/icons/male.svg.astro";
+import Locationsvg from "../assets/icons/location-dot.svg.astro";
+import Mobilesvg from "../assets/icons/mobile.svg.astro";
+import Envelopesvg from "../assets/icons/envelope.svg.astro";
+import Scissorssvg from "../assets/icons/scissors.svg.astro";
 ---
 
 <Layout title="">
@@ -13,13 +23,7 @@ import Layout from "../layouts/Layout.astro";
           Coiffeur Dedters: Dein Experte für trendige Hairstyles in Moers
           Rheinkamper Ring
         </h1>
-        <img
-          width="NaN"
-          height="NaN"
-          alt="company logo"
-          src="/images/coiffeur-dedters.svg"
-          class="min-w-[20em] max-w-[60vw] max-h-24 mt-6"
-        />
+        <CoiffeurDedters />
         <p
           class="mt-7 mb-10 font-serif tracking-wide leading-relaxed md:text-cl"
         >
@@ -28,7 +32,9 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
     <a href="/#feature" class="absolute bottom-10 block">
-      <img src="/assets/icons/scissors.svg" class="w-7 animate-bounce" />
+      <div class="animate-bounce">
+        <Scissorssvg />
+      </div>
     </a>
   </section>
   <section class="py-20" id="feature">
@@ -128,11 +134,7 @@ import Layout from "../layouts/Layout.astro";
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <img
-            class="w-7 h-7 mb-5"
-            src="/assets/icons/female.svg"
-            alt="Female Icon"
-          />
+          <Femalesvg />
           <h5
             class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
@@ -174,11 +176,7 @@ import Layout from "../layouts/Layout.astro";
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <img
-            class="w-7 h-7 mb-5"
-            src="/assets/icons/badge.svg"
-            alt="Badge Icon"
-          />
+          <Badgesvg />
           <h5
             class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
@@ -212,11 +210,7 @@ import Layout from "../layouts/Layout.astro";
         <div
           class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
         >
-          <img
-            class="w-7 h-7 mb-5"
-            src="/assets/icons/male.svg"
-            alt="Male Icon"
-          /><h5
+          <Malesvg /><h5
             class="mb-5 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
           >
             Herren
@@ -260,26 +254,22 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <div class="lg:flex">
           <div class="flex w-full lg:w-8/12 bg-white p-6">
-            <img src="/images/team.webp" alt="placeholder" />
+            <img src="/images/team.jpg" alt="placeholder" />
           </div>
           <div class="flex w-full flex-col p-6 text-light bg-dark lg:w-4/12">
             <h4 class="text-xl font-semibold mb-8">Kontakt</h4>
             <div class="flex items-center mb-3">
-              <img
-                class="w-7 h-7"
-                src="/assets/icons/location-dot.svg"
-                alt=""
-              />
+              <Locationsvg />
               <span class="pl-3">Kurt-Schuhmacher-Allee 6, 47445 Moers</span>
             </div>
             <div class="flex items-center mb-3">
-              <img class="w-7 h-7" src="/assets/icons/mobile.svg" alt="" />
+              <Mobilesvg />
               <a href="tel:02841 43970" class="block">
                 <span class="text-light pl-3">02841 43970</span>
               </a>
             </div>
             <div class="flex items-center mb-3">
-              <img class="w-7 h-7" src="/assets/icons/envelope.svg" alt="" />
+              <Envelopesvg />
               <a href="mailto:coiffeur-dedters@t-online.de" class="block">
                 <span class="text-light pl-3">coiffeur-dedters@t-online.de</span
                 >
@@ -326,7 +316,7 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
         <div class="p-6 order-first bg-white lg:w-4/12 lg:order-last">
-          <img src="/images/conny.webp" class="w-full h-full object-cover" />
+          <img src="/images/conny.jpg" class="w-full h-full object-cover" />
         </div>
       </div>
       <div class="flex flex-col lg:flex-row pt-16 lg:p-16 lg:pt-0">
@@ -346,7 +336,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <div class="p-6 order-first bg-white lg:w-4/12">
           <img
-            src="/images/justine.webp"
+            src="/images/justine.jpg"
             class="w-full h-full object-cover object-top"
           />
         </div>
