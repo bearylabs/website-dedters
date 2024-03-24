@@ -2,38 +2,30 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
-interface Props {
-  title: string;
-  description?: string;
-  image?: string;
-}
 
-const {
-  title,
-  description = "Coiffeur Dedters",
-  image = "/images/band.jpg",
-} = Astro.props;
+const pageTitle = "Coiffeur Dedters";
 ---
 
 <!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <title>Coiffeur Dedters</title>
-    <meta name="title" content="Coiffeur Dedters" />
-    <meta
-      name="description"
-      content="Entdecke bei Coiffeur Dedters die perfekte Frisur für jeden Anlass! Seit über 30 Jahren bieten wir professionelle Haarschnitte und kreative Haartechniken in Moers Rheinkamper Ring. Lass dich von unserer Erfahrung und Leidenschaft überzeugen!"
-    />
+    <link rel="icon" type="image/svg" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="min-h-screen">
     <Header />
     <slot />
     <Footer />
+    <script>
+      import "../scripts/nav-menu.js";
+    </script>
   </body>
 </html>
