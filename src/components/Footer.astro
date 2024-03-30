@@ -21,7 +21,9 @@ import Facebooksvg from "../assets/brands/facebook.svg.astro";
           >
         </div>
         <div class="text-center text-white text-sm mb-6">
-          <p class="mb-0">© 2024 Coiffeur Dedters.</p>
+          <p class="mb-0">
+            Copyright © <span id="copyright"> </span> Coiffeur Dedters.
+          </p>
           <p>All rights reserved</p>
         </div>
         <div class="flex justify-center gap-3 mx-auto mb-6">
@@ -44,3 +46,9 @@ import Facebooksvg from "../assets/brands/facebook.svg.astro";
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelector("#copyright").textContent = new Date()
+    .getFullYear()
+    .toString();
+</script>
